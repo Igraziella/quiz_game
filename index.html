@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz game</title>
+    <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Entertainment Quiz</h1>
+      <div id="progress-indicator">Question 1 of 5</div>
+
+      <!-- Body of the quiz starts here -->
+
+      <div id="question-body">
+        <h2>Who won the Album of the Year at the 2025 Grammy Awards?</h2>
+
+        <div id="options">
+          <button class="option">A) Taylor Swift</button>
+          <button class="option">B) André 3000</button>
+          <button class="option">C) Beyoncé</button>
+          <button class="option">D) Sabrina Carpenter</button>
+        </div>
+      </div>
+
+      <button id="next-button">
+        Next
+        <iconify-icon
+          icon="line-md:arrow-right"
+          width="16"
+          height="16"
+        ></iconify-icon>
+      </button>
+
+      <div id="result">
+        <h2>
+          Your score is: <span id="score">0</span> / <span id="total">5</span>
+        </h2>
+        <button id="restart">Restart</button>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
