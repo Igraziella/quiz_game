@@ -41,10 +41,6 @@ h1 {
   gap: 12px;
 }
 
-/* #options button:active {
-  background-color: #ffcc01;
-} */
-
 #options button:hover {
   background-color: #dbcc91;
 }
@@ -54,6 +50,7 @@ button {
   text-align: left;
   padding: 8px 16px;
   cursor: pointer;
+  border: none;
 }
 
 #next-button {
