@@ -1,3 +1,4 @@
+/* Global style */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@ body {
   background-color: #fffff0;
 }
 
+/* Quiz container */
 .container {
   text-align: center;
   padding: 30px;
@@ -30,18 +32,18 @@ h1 {
   margin-bottom: 20px;
 }
 
-#question-body h2 {
+.question-body h2 {
   margin-bottom: 20px;
 }
 
-#options {
+.options {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 12px;
 }
 
-#options button:hover {
+.options button:hover {
   background-color: #dbcc91;
 }
 
@@ -57,7 +59,7 @@ button {
   background-color: #ffcc01;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   margin: 16px 0;
 }
 
@@ -79,4 +81,18 @@ button {
 
 #restart:hover {
   background-color: #ffcc01;
+}
+
+.selected {
+  background-color: #dbcc;
+}
+
+.correct {
+  background-color: #28a745 !important;
+  color: #ffffff;
+}
+
+.wrong {
+  background-color: #dc3545 !important;
+  color: #ffffff;
 }
